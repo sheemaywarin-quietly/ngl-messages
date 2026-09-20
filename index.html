@@ -19,16 +19,16 @@
             min-height: 100vh;
         }
 
-        /* Full page background using your dream aesthetic image */
+        /* Full page background using your uploaded image */
         body {
-            background-image: url('https://i.ibb.co/L5hY8mD/ChatGPT-Image-Sep-10-2026-10-39-49-PM.png');
+            background-image: url('bg.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
+            background-color: #1e1b4b;
         }
 
-        /* Hero Landing Page */
         .hero {
             position: relative;
             min-height: 100vh;
@@ -40,7 +40,7 @@
             color: #ffffff;
             padding: 20px;
             box-sizing: border-box;
-            background: rgba(15, 10, 30, 0.35); /* Soft overlay to keep text readable */
+            background: rgba(15, 10, 30, 0.35);
         }
 
         h1 {
@@ -76,14 +76,13 @@
             transform: scale(0.96);
         }
 
-        /* NGL Message Section */
         .app-section {
             padding: 60px 20px;
             display: flex;
             justify-content: center;
             min-height: 100vh;
             box-sizing: border-box;
-            background: rgba(15, 10, 30, 0.45); /* Darker blur layer over background */
+            background: rgba(15, 10, 30, 0.45);
             backdrop-filter: blur(5px);
         }
 
@@ -92,7 +91,6 @@
             width: 100%;
         }
 
-        /* Glassmorphism NGL Card */
         .card {
             background: rgba(255, 255, 255, 0.88);
             backdrop-filter: blur(10px);
@@ -198,17 +196,14 @@
 </head>
 <body>
 
-    <!-- Hero Landing Page -->
     <div class="hero">
         <h1>Welcome to My World! ✨</h1>
         <p class="subtitle">A cozy space for stars, thoughts, and secret notes 🌙</p>
         <a href="#ngl-box" class="btn-start">Get Started 🚀</a>
     </div>
 
-    <!-- NGL Section -->
     <div class="app-section" id="ngl-box">
         <div class="container">
-            
             <div class="card">
                 <div class="avatar">💌</div>
                 <h2>@sheemaywarin</h2>
@@ -220,7 +215,6 @@
 
             <h3 class="inbox-title">📥 Received Notes</h3>
             <div id="inbox"></div>
-
         </div>
     </div>
 
@@ -235,7 +229,6 @@
             }
 
             var inbox = document.getElementById("inbox");
-
             var newMsg = document.createElement("div");
             newMsg.className = "message-bubble";
             newMsg.innerHTML = `
